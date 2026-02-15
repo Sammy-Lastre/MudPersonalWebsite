@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MudPersonalWebsite/MudPersonalWebsite.Client/MudPersonalWebsite.Client.csproj" />
+  <Project Path="MudPersonalWebsite/MudPersonalWebsite/MudPersonalWebsite.csproj" />
+</Solution>
