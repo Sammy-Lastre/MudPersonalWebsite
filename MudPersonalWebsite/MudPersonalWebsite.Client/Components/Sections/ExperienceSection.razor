@@ -1,0 +1,82 @@
+<MudContainer id="@Id" Class="@Class">
+    <MudText Typo="Typo.h4" Color="Color.Primary" Class="mb-8"><b>Experience</b></MudText>
+
+    <MudTimeline TimelinePosition="TimelinePosition.Start">
+        <MudTimelineItem Color="Color.Primary" Variant="Variant.Filled" Size="Size.Large" Elevation="2">
+            <ItemOpposite>
+                <MudText Color="Color.Primary" Typo="Typo.h6"><b>Nov 2023 - Present</b></MudText>
+            </ItemOpposite>
+            <ItemContent>
+                <MudCard Elevation="3" Class="mb-6">
+                    <MudCardHeader>
+                        <CardHeaderContent>
+                            <MudText Typo="Typo.h5"><b>Senior Backend Developer</b></MudText>
+                            <MudText Typo="Typo.subtitle1" Color="Color.Secondary">Tarlogic</MudText>
+                        </CardHeaderContent>
+                    </MudCardHeader>
+                    <MudCardContent>
+                        <ul class="mx-3">
+                            <li><MudText Typo="Typo.body2">Architect and lead development of new functionalities in microservices and modular monolith applications using C# and ASP.NET Core for high transactional workloads.</MudText></li>
+                            <li><MudText Typo="Typo.body2">Apply Clean Architecture, CQRS, and Vertical Slice patterns for modularity and scalability.</MudText></li>
+                            <li><MudText Typo="Typo.body2">Integrate Azure AI/ML services end-to-end with production-ready reliability and monitoring.</MudText></li>
+                            <li><MudText Typo="Typo.body2">Improve observability with structured logging, health checks, and real-time monitoring dashboards.</MudText></li>
+                            <li><MudText Typo="Typo.body2">Maintain code quality through automated testing with xUnit.</MudText></li>
+                        </ul>
+                    </MudCardContent>
+                </MudCard>
+            </ItemContent>
+        </MudTimelineItem>
+
+        <MudTimelineItem Color="Color.Secondary" Variant="Variant.Filled" Size="Size.Large" Elevation="2">
+            <ItemOpposite>
+                <MudText Color="Color.Secondary" Typo="Typo.h6"><b>Aug 2022 - Nov 2023</b></MudText>
+            </ItemOpposite>
+            <ItemContent>
+                <MudCard Elevation="3" Class="mb-6">
+                    <MudCardHeader>
+                        <CardHeaderContent>
+                            <MudText Typo="Typo.h5"><b>Software Engineer</b></MudText>
+                            <MudText Typo="Typo.subtitle1" Color="Color.Secondary">Miratech</MudText>
+                        </CardHeaderContent>
+                    </MudCardHeader>
+                    <MudCardContent>
+                        <ul class="mx-3">
+                            <li><MudText Typo="Typo.body2">Led modernization of legacy debt management tools to ASP.NET Core.</MudText></li>
+                            <li><MudText Typo="Typo.body2">Developed full-stack features using Vue.js and JavaScript.</MudText></li>
+                            <li><MudText Typo="Typo.body2">Optimized SQL Server queries and stored procedures for performance.</MudText></li>
+                            <li><MudText Typo="Typo.body2">Collaborated with stakeholders to deliver production-ready solutions.</MudText></li>
+                        </ul>
+                    </MudCardContent>
+                </MudCard>
+            </ItemContent>
+        </MudTimelineItem>
+
+        <MudTimelineItem Color="Color.Default" Variant="Variant.Filled" Size="Size.Large" Elevation="2">
+            <ItemOpposite>
+                <MudText Color="Color.Default" Typo="Typo.h6"><b>Feb 2021 - Aug 2022</b></MudText>
+            </ItemOpposite>
+            <ItemContent>
+                <MudCard Elevation="3">
+                    <MudCardHeader>
+                        <CardHeaderContent>
+                            <MudText Typo="Typo.h5"><b>Application Development Associate</b></MudText>
+                            <MudText Typo="Typo.subtitle1" Color="Color.Secondary">Accenture</MudText>
+                        </CardHeaderContent>
+                    </MudCardHeader>
+                    <MudCardContent>
+                        <ul class="mx-3">
+                            <li><MudText Typo="Typo.body2">Built backend automation and data transformation pipelines using C#, SSIS, and SQL Server.</MudText></li>
+                            <li><MudText Typo="Typo.body2">Designed and optimized complex T-SQL queries for mass data validation and reporting.</MudText></li>
+                            <li><MudText Typo="Typo.body2">Supported enterprise data workflows.</MudText></li>
+                        </ul>
+                    </MudCardContent>
+                </MudCard>
+            </ItemContent>
+        </MudTimelineItem>
+    </MudTimeline>
+</MudContainer>
+
+@code {
+    [Parameter] public string? Id { get; set; }
+    [Parameter] public string? Class { get; set; }
+}

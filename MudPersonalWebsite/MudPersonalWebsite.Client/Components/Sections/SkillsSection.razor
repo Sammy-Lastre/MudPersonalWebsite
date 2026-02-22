@@ -1,0 +1,73 @@
+<MudContainer id="@Id" Class="@Class">
+    <MudText Typo="Typo.h4" Color="Color.Primary" Class="mb-8"><b>Technical Skills</b></MudText>
+
+    <MudGrid>
+        <MudItem xs="12" md="6">
+            <MudPaper Class="pa-6 h-100" Elevation="3">
+                <MudText Typo="Typo.h6" Class="mb-4">Backend & .NET</MudText>
+                <MudChipSet T="string" SelectionMode="SelectionMode.SingleSelection" >
+                    <MudChip Text="C#" Color="Color.Primary" />
+                    <MudChip Text=".NET Core" Color="Color.Primary" />
+                    <MudChip Text="ASP.NET Core" Color="Color.Primary" />
+                    <MudChip Text="Entity Framework Core" Color="Color.Primary" />
+                    <MudChip Text="REST APIs" Color="Color.Primary" />
+                    <MudChip Text="Clean Architecture" Color="Color.Default" />
+                    <MudChip Text="CQRS" Color="Color.Default" />
+                    <MudChip Text="Vertical Slices" Color="Color.Default" />
+                </MudChipSet>
+            </MudPaper>
+        </MudItem>
+        
+        <MudItem xs="12" md="6">
+            <MudPaper Class="pa-6 h-100" Elevation="3">
+                <MudText Typo="Typo.h6" Class="mb-4">Cloud & Infrastructure (Azure)</MudText>
+                <MudChipSet T="string" SelectionMode="SelectionMode.SingleSelection">
+                    <MudChip Text="Azure App Service" Color="Color.Info" />
+                    <MudChip Text="Azure Functions" Color="Color.Info" />
+                    <MudChip Text="Azure Data Factory" Color="Color.Info" />
+                    <MudChip Text="Azure DevOps" Color="Color.Info" />
+                </MudChipSet>
+            </MudPaper>
+        </MudItem>
+
+        <MudItem xs="12" md="4">
+            <MudPaper Class="pa-6 h-100" Elevation="3">
+                <MudText Typo="Typo.h6" Class="mb-4">Databases</MudText>
+                <MudChipSet T="string" SelectionMode="SelectionMode.SingleSelection">
+                    <MudChip Text="SQL Server" Color="Color.Secondary" />
+                    <MudChip Text="Azure SQL Database" Color="Color.Secondary" />
+                    <MudChip Text="Azure Cosmos DB" Color="Color.Secondary" />
+                </MudChipSet>
+            </MudPaper>
+        </MudItem>
+
+        <MudItem xs="12" md="4">
+            <MudPaper Class="pa-6 h-100" Elevation="3">
+                <MudText Typo="Typo.h6" Class="mb-4">Frontend</MudText>
+                <MudChipSet T="string" SelectionMode="SelectionMode.SingleSelection">
+                    <MudChip Text="Blazor" Color="Color.Success" />
+                    <MudChip Text="Vue.js" Color="Color.Success" />
+                    <MudChip Text="JavaScript" Color="Color.Success" />
+                    <MudChip Text="WinUI" Color="Color.Success" />
+                    <MudChip Text="WPF" Color="Color.Success" />
+                </MudChipSet>
+            </MudPaper>
+        </MudItem>
+
+        <MudItem xs="12" md="4">
+            <MudPaper Class="pa-6 h-100" Elevation="3">
+                <MudText Typo="Typo.h6" Class="mb-4">Tools</MudText>
+                <MudChipSet T="string" SelectionMode="SelectionMode.SingleSelection">
+                    <MudChip Text="Git" Color="Color.Dark" />
+                    <MudChip Text="Docker" Color="Color.Dark" />
+                    <MudChip Text="SSIS" Color="Color.Dark" />
+                </MudChipSet>
+            </MudPaper>
+        </MudItem>
+    </MudGrid>
+</MudContainer>
+
+@code {
+    [Parameter] public string? Id { get; set; }
+    [Parameter] public string? Class { get; set; }
+}
