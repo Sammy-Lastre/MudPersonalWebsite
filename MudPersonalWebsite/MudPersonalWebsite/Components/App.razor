@@ -15,8 +15,27 @@
 
 <body>
     <Routes @rendermode="InteractiveWebAssembly" />
+
+    <script>
+        // Silently suppress DOM errors caused by extensions like Dark Reader
+        window.addEventListener('error', function (e) {
+            var msg = e && e.message ? e.message : '';
+            if (msg && (msg.includes('insertBefore') || msg.includes('removeChild') || msg.includes('Cannot read properties of null'))) {
+                e.preventDefault();
+                return true;
+            }
+        }, true);
+
+        window.addEventListener('unhandledrejection', function (e) {
+            var reason = e && e.reason ? (e.reason.message || String(e.reason)) : '';
+            if (reason && (reason.includes('insertBefore') || reason.includes('removeChild') || reason.includes('Cannot read properties of null'))) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
     <script src="@Assets["_framework/blazor.web.js"]"></script>
-    <script src=@Assets["_content/MudBlazor/MudBlazor.min.js"]></script>
+    <script src="@Assets["_content/MudBlazor/MudBlazor.min.js"]"></script>
 </body>
 
 </html>
