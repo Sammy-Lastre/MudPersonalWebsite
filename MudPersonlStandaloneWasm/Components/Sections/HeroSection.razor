@@ -1,0 +1,25 @@
+<MudContainer Class="d-flex flex-column align-center justify-center py-16" id="@Id">
+    <MudText Typo="Typo.h2" Align="Align.Center" Color="Color.Primary" Class="mb-4">
+        <b>Sammy Lastre Silveira</b>
+    </MudText>
+    <MudText Typo="Typo.h4" Align="Align.Center" Color="Color.Secondary" Class="mb-8">
+        Senior .NET Developer
+    </MudText>
+    
+    <MudStack Row="true" Spacing="4" Class="mt-4">
+        <MudIconButton Icon="@Icons.Custom.Brands.LinkedIn" 
+                       Href="https://www.linkedin.com/in/sammy-lastre-silveira-a22a0a199/"
+                       Target="_blank"
+                       Color="Color.Info" 
+                       Size="Size.Large" />
+        <MudIconButton Icon="@Icons.Custom.Brands.GitHub" 
+                       Href="https://github.com/Sammy-Lastre" 
+                       Target="_blank"
+                       Color="Color.Default" 
+                       Size="Size.Large" />
+    </MudStack>
+</MudContainer>
+
+@code {
+    [Parameter] public string? Id { get; set; }
+}

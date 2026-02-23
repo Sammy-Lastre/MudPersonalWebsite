@@ -1,0 +1,76 @@
+<MudContainer id="@Id" Class="@Class">
+    <MudGrid>
+        <MudItem xs="12" md="4">
+            <MudText Typo="Typo.h4" Color="Color.Primary" Class="mb-6"><b>Education</b></MudText>
+            <MudCard Elevation="3" Class="h-100">
+                <MudCardHeader>
+                    <CardHeaderContent>
+                        <MudText Typo="Typo.h6">CIFP Txurdinaga LHII</MudText>
+                        <MudText Typo="Typo.subtitle2" Color="Color.Secondary">2019 - 2021</MudText>
+                    </CardHeaderContent>
+                </MudCardHeader>
+                <MudCardContent>
+                    <MudText Typo="Typo.body2">
+                        Higher Technician in Multi-platform Applications Development (Software Engineering)
+                    </MudText>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+
+        <MudItem xs="12" md="4">
+            <MudText Typo="Typo.h4" Color="Color.Primary" Class="mb-6"><b>Certifications</b></MudText>
+            <MudCard Elevation="3" Class="h-100">
+                <MudCardContent>
+                    <MudList T="string" Dense="true" ReadOnly="true">
+                        <MudListItem Icon="@Icons.Material.Filled.CheckCircle" IconColor="Color.Info">
+                            <MudLink Target="_blank" Href="https://learn.microsoft.com/api/credentials/share/en-us/SammyLastre-6151/EAB6281A50AB3E08?sharingId">
+                                Microsoft Certified: Azure Fundamentals
+                            </MudLink>
+                        </MudListItem>
+                        <MudListItem Icon="@Icons.Material.Filled.CheckCircle" IconColor="Color.Info">
+                            <MudLink Target="_blank" Href="https://learn.microsoft.com/api/credentials/share/en-us/SammyLastre-6151/B22B98A53DE00EBB?sharingId">
+                                Microsoft Certified: Azure Data Fundamentals
+                            </MudLink>
+                        </MudListItem>
+                        <MudListItem Icon="@Icons.Material.Filled.CheckCircle" IconColor="Color.Info">
+                            <MudLink Target="_blank" Href="https://www.credly.com/badges/c3b9225a-5862-4910-9414-d5915f6065e7?source=linked_in_profile">
+                                Google Data Analytics Certificate
+                            </MudLink>
+                        </MudListItem>
+                        <MudListItem Icon="@Icons.Material.Filled.CheckCircle" IconColor="Color.Info">
+                            <MudLink Target="_blank" Href="https://freecodecamp.org/certification/fcc87cc5c31-ecc3-4a71-99d0-cee34856eb74/scientific-computing-with-python-v7">
+                                Scientific Computing with Python
+                            </MudLink>
+                        </MudListItem>
+                        <MudListItem Icon="@Icons.Material.Filled.CheckCircle" IconColor="Color.Info">
+                            <MudLink Target="_blank" Href="https://freecodecamp.org/certification/fcc87cc5c31-ecc3-4a71-99d0-cee34856eb74/data-analysis-with-python-v7">
+                                Data Analysis with Python
+                            </MudLink>
+                        </MudListItem>
+                    </MudList>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+
+        <MudItem xs="12" md="4">
+            <MudText Typo="Typo.h4" Color="Color.Primary" Class="mb-6"><b>Languages</b></MudText>
+            <MudCard Elevation="3" Class="h-100">
+                <MudCardContent>
+                    <MudList T="string" Dense="true" ReadOnly="true">
+                        <MudListItem Icon="@Icons.Material.Filled.Language" IconColor="Color.Primary">
+                            <MudText Typo="Typo.body1"><b>Spanish</b> - Native / Bilingual</MudText>
+                        </MudListItem>
+                        <MudListItem Icon="@Icons.Material.Filled.Language" IconColor="Color.Primary">
+                            <MudText Typo="Typo.body1"><b>English</b> - Full Professional</MudText>
+                        </MudListItem>
+                    </MudList>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+</MudContainer>
+
+@code {
+    [Parameter] public string? Id { get; set; }
+    [Parameter] public string? Class { get; set; }
+}

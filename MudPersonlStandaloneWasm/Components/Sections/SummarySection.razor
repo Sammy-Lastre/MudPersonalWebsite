@@ -1,0 +1,26 @@
+<MudContainer id="@Id" Class="@Class">
+    <MudText Typo="Typo.h4" Color="Color.Primary" Class="mb-6"><b>About Me</b></MudText>
+    
+    <MudPaper Class="pa-8" Elevation="3">
+        <MudText Typo="Typo.body1" Class="mb-4">
+            Senior Backend Developer with 5+ years of experience designing and building high-performance, scalable systems on the Microsoft stack. Specialized in cloud-native applications on Azure, working with C# and ASP.NET Core across microservices and modular monolith architectures.
+        </MudText>
+        <MudText Typo="Typo.body1" Class="mb-4">
+            Technical focus includes Clean Architecture, CQRS, and Vertical Slice patterns, ensuring maintainable, testable, and well-structured solutions. Full ownership of features from design to production, working in agile and remote-first environments with strong CI/CD practices.
+        </MudText>
+        <MudText Typo="Typo.body1" Class="mb-4">
+            At Tarlogic, contributes to the development of complex systems under high transactional load, integrating Azure AI/ML services and implementing observability through structured logging, health checks, and monitoring dashboards. Strong emphasis on code quality and reliability through automated testing and clear architectural boundaries.
+        </MudText>
+        <MudText Typo="Typo.body1" Class="mb-4">
+            Previous experience at Miratech and Accenture building solid foundations in backend development, frontend integration, and database optimization, working on modernization projects and large-scale data processing systems.
+        </MudText>
+        <MudText Typo="Typo.body1">
+            Driven by continuous improvement, clean design, and solving complex technical problems with practical and scalable solutions.
+        </MudText>
+    </MudPaper>
+</MudContainer>
+
+@code {
+    [Parameter] public string? Id { get; set; }
+    [Parameter] public string? Class { get; set; }
+}
