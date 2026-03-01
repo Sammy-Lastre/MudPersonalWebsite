@@ -1,8 +1,10 @@
 <MudContainer id="@Id" Class="@Class">
     <MudText Typo="Typo.h4" Color="Color.Primary" Class="mb-8"><b>Experience</b></MudText>
 
+    <MudBreakpointProvider OnBreakpointChanged="OnBreakpointChanged" />
+
     <MudTimeline TimelinePosition="TimelinePosition.Start">
-        <MudTimelineItem Color="Color.Primary" Variant="Variant.Filled" Size="Size.Large" Elevation="2">
+        <MudTimelineItem Color="Color.Primary" Variant="Variant.Filled" Size="@TimelineItemSize" Elevation="2">
             <ItemOpposite>
                 <MudText Color="Color.Primary" Typo="Typo.h6"><b>Nov 2023 - Present</b></MudText>
             </ItemOpposite>
@@ -27,7 +29,7 @@
             </ItemContent>
         </MudTimelineItem>
 
-        <MudTimelineItem Color="Color.Secondary" Variant="Variant.Filled" Size="Size.Large" Elevation="2">
+        <MudTimelineItem Color="Color.Secondary" Variant="Variant.Filled" Size="@TimelineItemSize" Elevation="2">
             <ItemOpposite>
                 <MudText Color="Color.Secondary" Typo="Typo.h6"><b>Aug 2022 - Nov 2023</b></MudText>
             </ItemOpposite>
@@ -51,7 +53,7 @@
             </ItemContent>
         </MudTimelineItem>
 
-        <MudTimelineItem Color="Color.Default" Variant="Variant.Filled" Size="Size.Large" Elevation="2">
+        <MudTimelineItem Color="Color.Default" Variant="Variant.Filled" Size="@TimelineItemSize" Elevation="2">
             <ItemOpposite>
                 <MudText Color="Color.Default" Typo="Typo.h6"><b>Feb 2021 - Aug 2022</b></MudText>
             </ItemOpposite>
@@ -77,6 +79,15 @@
 </MudContainer>
 
 @code {
+    private bool isMobile;
+
     [Parameter] public string? Id { get; set; }
     [Parameter] public string? Class { get; set; }
+
+    private Size TimelineItemSize => isMobile ? Size.Small : Size.Large;
+
+    private void OnBreakpointChanged(Breakpoint breakpoint)
+    {
+        isMobile = breakpoint is Breakpoint.Xs or Breakpoint.Sm;
+    }
 }

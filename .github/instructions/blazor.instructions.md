@@ -12,6 +12,7 @@ applyTo: '**/*.razor, **/*.razor.cs, **/*.razor.css'
 - Async/await should be used where applicable to ensure non-blocking UI operations.
 - Make use of the MudBlazor component library for consistent UI design and functionality, adhering to its best practices and patterns.
 - Don't reinvent the wheel; leverage existing Blazor and MudBlazor features and patterns to solve common problems efficiently.
+- Never, I repeat, never, create custom css or styles.
 
 ## Naming Conventions
 
