@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "route": "/index.html",
+      "rewrite": "/index.html"
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/_framework/*",
+      "/_content/*",
+      "/*.{css,js,png,jpg,jpeg,gif,svg,ico,webp,avif,woff,woff2,ttf,eot,map,txt,xml,json,wasm}"
+    ]
+  }
+}
