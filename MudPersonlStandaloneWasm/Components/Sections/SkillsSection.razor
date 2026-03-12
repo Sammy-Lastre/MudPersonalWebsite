@@ -1,67 +1,70 @@
 <MudContainer id="@Id" Class="@Class">
     <MudText Typo="Typo.h4" Color="Color.Primary" Class="mb-8"><b>Technical Skills</b></MudText>
+    <MudText Typo="Typo.subtitle1" Color="Color.Secondary" Class="mb-8">
+        A balanced toolkit for building, shipping, and evolving dependable products on the Microsoft stack.
+    </MudText>
 
     <MudGrid>
         <MudItem xs="12" md="6">
-            <MudPaper Class="pa-6 h-100" Elevation="3">
-                <MudText Typo="Typo.h6" Class="mb-4">Backend & .NET</MudText>
-                <MudChipSet T="string" SelectionMode="SelectionMode.SingleSelection" >
-                    <MudChip Text="C#" Color="Color.Primary" />
-                    <MudChip Text=".NET Core" Color="Color.Primary" />
-                    <MudChip Text="ASP.NET Core" Color="Color.Primary" />
-                    <MudChip Text="Entity Framework Core" Color="Color.Primary" />
-                    <MudChip Text="REST APIs" Color="Color.Primary" />
-                    <MudChip Text="Clean Architecture" Color="Color.Default" />
-                    <MudChip Text="CQRS" Color="Color.Default" />
-                    <MudChip Text="Vertical Slices" Color="Color.Default" />
-                </MudChipSet>
+            <MudPaper Class="pa-6 h-100" Elevation="0" Outlined="true">
+                <MudText Typo="Typo.h6" Color="Color.Primary" Class="mb-4">Backend & .NET</MudText>
+                <MudStack Row="true" Spacing="1" Class="flex-wrap">
+                    <MudChip T="string" Text="C#" Color="Color.Primary" Variant="Variant.Outlined" />
+                    <MudChip T="string" Text=".NET Core" Color="Color.Primary" Variant="Variant.Outlined" />
+                    <MudChip T="string" Text="ASP.NET Core" Color="Color.Primary" Variant="Variant.Outlined" />
+                    <MudChip T="string" Text="Entity Framework Core" Color="Color.Primary" Variant="Variant.Outlined" />
+                    <MudChip T="string" Text="REST APIs" Color="Color.Primary" Variant="Variant.Outlined" />
+                    <MudChip T="string" Text="Clean Architecture" Color="Color.Default" Variant="Variant.Outlined" />
+                    <MudChip T="string" Text="CQRS" Color="Color.Default" Variant="Variant.Outlined" />
+                    <MudChip T="string" Text="Vertical Slices" Color="Color.Default" Variant="Variant.Outlined" />
+                </MudStack>
             </MudPaper>
         </MudItem>
         
         <MudItem xs="12" md="6">
-            <MudPaper Class="pa-6 h-100" Elevation="3">
-                <MudText Typo="Typo.h6" Class="mb-4">Cloud & Infrastructure (Azure)</MudText>
-                <MudChipSet T="string" SelectionMode="SelectionMode.SingleSelection">
-                    <MudChip Text="Azure App Service" Color="Color.Info" />
-                    <MudChip Text="Azure Functions" Color="Color.Info" />
-                    <MudChip Text="Azure Data Factory" Color="Color.Info" />
-                    <MudChip Text="Azure DevOps" Color="Color.Info" />
-                </MudChipSet>
+            <MudPaper Class="pa-6 h-100" Elevation="0" Outlined="true">
+                <MudText Typo="Typo.h6" Color="Color.Info" Class="mb-4">Cloud & Infrastructure (Azure)</MudText>
+                <MudStack Row="true" Spacing="1" Class="flex-wrap">
+                    <MudChip T="string" Text="Azure App Service" Color="Color.Info" Variant="Variant.Outlined" />
+                    <MudChip T="string" Text="Azure Functions" Color="Color.Info" Variant="Variant.Outlined" />
+                    <MudChip T="string" Text="Azure Data Factory" Color="Color.Info" Variant="Variant.Outlined" />
+                    <MudChip T="string" Text="Azure DevOps" Color="Color.Info" Variant="Variant.Outlined" />
+                </MudStack>
             </MudPaper>
         </MudItem>
 
         <MudItem xs="12" md="4">
-            <MudPaper Class="pa-6 h-100" Elevation="3">
-                <MudText Typo="Typo.h6" Class="mb-4">Databases</MudText>
-                <MudChipSet T="string" SelectionMode="SelectionMode.SingleSelection">
-                    <MudChip Text="SQL Server" Color="Color.Secondary" />
-                    <MudChip Text="Azure SQL Database" Color="Color.Secondary" />
-                    <MudChip Text="Azure Cosmos DB" Color="Color.Secondary" />
-                </MudChipSet>
+            <MudPaper Class="pa-6 h-100" Elevation="0" Outlined="true">
+                <MudText Typo="Typo.h6" Color="Color.Secondary" Class="mb-4">Databases</MudText>
+                <MudStack Row="true" Spacing="1" Class="flex-wrap">
+                    <MudChip T="string" Text="SQL Server" Color="Color.Secondary" Variant="Variant.Outlined" />
+                    <MudChip T="string" Text="Azure SQL Database" Color="Color.Secondary" Variant="Variant.Outlined" />
+                    <MudChip T="string" Text="Azure Cosmos DB" Color="Color.Secondary" Variant="Variant.Outlined" />
+                </MudStack>
             </MudPaper>
         </MudItem>
 
         <MudItem xs="12" md="4">
-            <MudPaper Class="pa-6 h-100" Elevation="3">
-                <MudText Typo="Typo.h6" Class="mb-4">Frontend</MudText>
-                <MudChipSet T="string" SelectionMode="SelectionMode.SingleSelection">
-                    <MudChip Text="Blazor" Color="Color.Success" />
-                    <MudChip Text="Vue.js" Color="Color.Success" />
-                    <MudChip Text="JavaScript" Color="Color.Success" />
-                    <MudChip Text="WinUI" Color="Color.Success" />
-                    <MudChip Text="WPF" Color="Color.Success" />
-                </MudChipSet>
+            <MudPaper Class="pa-6 h-100" Elevation="0" Outlined="true">
+                <MudText Typo="Typo.h6" Color="Color.Success" Class="mb-4">Frontend</MudText>
+                <MudStack Row="true" Spacing="1" Class="flex-wrap">
+                    <MudChip T="string" Text="Blazor" Color="Color.Success" Variant="Variant.Outlined" />
+                    <MudChip T="string" Text="Vue.js" Color="Color.Success" Variant="Variant.Outlined" />
+                    <MudChip T="string" Text="JavaScript" Color="Color.Success" Variant="Variant.Outlined" />
+                    <MudChip T="string" Text="WinUI" Color="Color.Success" Variant="Variant.Outlined" />
+                    <MudChip T="string" Text="WPF" Color="Color.Success" Variant="Variant.Outlined" />
+                </MudStack>
             </MudPaper>
         </MudItem>
 
         <MudItem xs="12" md="4">
-            <MudPaper Class="pa-6 h-100" Elevation="3">
-                <MudText Typo="Typo.h6" Class="mb-4">Tools</MudText>
-                <MudChipSet T="string" SelectionMode="SelectionMode.SingleSelection">
-                    <MudChip Text="Git" Color="Color.Dark" />
-                    <MudChip Text="Docker" Color="Color.Dark" />
-                    <MudChip Text="SSIS" Color="Color.Dark" />
-                </MudChipSet>
+            <MudPaper Class="pa-6 h-100" Elevation="0" Outlined="true">
+                <MudText Typo="Typo.h6" Color="Color.Warning" Class="mb-4">Tools</MudText>
+                <MudStack Row="true" Spacing="1" Class="flex-wrap">
+                    <MudChip T="string" Text="Git" Color="Color.Warning" Variant="Variant.Outlined" />
+                    <MudChip T="string" Text="Docker" Color="Color.Warning" Variant="Variant.Outlined" />
+                    <MudChip T="string" Text="SSIS" Color="Color.Warning" Variant="Variant.Outlined" />
+                </MudStack>
             </MudPaper>
         </MudItem>
     </MudGrid>

@@ -1,23 +1,76 @@
-<MudContainer Class="d-flex flex-column align-center justify-center py-16" id="@Id">
-    <MudText Typo="Typo.h2" Align="Align.Center" Color="Color.Primary" Class="mb-4">
-        <b>Sammy Lastre Silveira</b>
-    </MudText>
-    <MudText Typo="Typo.h4" Align="Align.Center" Color="Color.Secondary" Class="mb-8">
-        Senior .NET Developer
-    </MudText>
-    
-    <MudStack Row="true" Spacing="4" Class="mt-4">
-        <MudIconButton Icon="@Icons.Custom.Brands.LinkedIn" 
-                       Href="https://www.linkedin.com/in/sammy-lastre-silveira-a22a0a199/"
-                       Target="_blank"
-                       Color="Color.Info" 
-                       Size="Size.Large" />
-        <MudIconButton Icon="@Icons.Custom.Brands.GitHub" 
-                       Href="https://github.com/Sammy-Lastre" 
-                       Target="_blank"
-                       Color="Color.Default" 
-                       Size="Size.Large" />
-    </MudStack>
+<MudContainer Class="py-16" id="@Id">
+    <MudPaper Outlined="true" Class="pa-8">
+        <MudStack Spacing="4" AlignItems="AlignItems.Center">
+            <MudChip T="string" Color="Color.Info" Variant="Variant.Outlined" Icon="@Icons.Material.Filled.Bolt">
+                Open to impactful senior .NET opportunities
+            </MudChip>
+
+            <MudText Typo="Typo.h2" Align="Align.Center" Color="Color.Primary">
+                <b>Sammy Lastre Silveira</b>
+            </MudText>
+
+            <MudText Typo="Typo.h4" Align="Align.Center" Color="Color.Secondary">
+                Senior .NET Developer
+            </MudText>
+
+            <MudText Typo="Typo.h6" Align="Align.Center" Color="Color.Default">
+                I build reliable Azure-native backend systems with a modern engineering mindset, clear architecture, and production-ready delivery.
+            </MudText>
+
+            <MudStack Row="true" Spacing="2" Justify="Justify.Center" Class="flex-wrap mt-2">
+                <MudButton Variant="Variant.Filled" Color="Color.Primary" Href="#experience" StartIcon="@Icons.Material.Filled.Timeline">
+                    View Experience
+                </MudButton>
+                <MudButton Variant="Variant.Outlined"
+                           Color="Color.Secondary"
+                           Href="https://www.linkedin.com/in/sammy-lastre-silveira-a22a0a199/"
+                           Target="_blank"
+                           StartIcon="@Icons.Custom.Brands.LinkedIn">
+                    Contact on LinkedIn
+                </MudButton>
+            </MudStack>
+
+            <MudStack Row="true" Spacing="2" Justify="Justify.Center" Class="flex-wrap">
+                <MudChip T="string" Color="Color.Primary" Variant="Variant.Outlined" Icon="@Icons.Material.Filled.Memory">Cloud-native .NET</MudChip>
+                <MudChip T="string" Color="Color.Secondary" Variant="Variant.Outlined" Icon="@Icons.Material.Filled.Hub">Distributed systems</MudChip>
+                <MudChip T="string" Color="Color.Info" Variant="Variant.Outlined" Icon="@Icons.Material.Filled.Verified">Trusted delivery</MudChip>
+            </MudStack>
+
+            <MudStack Row="true" Spacing="4" Justify="Justify.Center" Class="mt-2">
+                <MudIconButton Icon="@Icons.Custom.Brands.LinkedIn"
+                               Href="https://www.linkedin.com/in/sammy-lastre-silveira-a22a0a199/"
+                               Target="_blank"
+                               Color="Color.Info"
+                               Size="Size.Large" />
+                <MudIconButton Icon="@Icons.Custom.Brands.GitHub"
+                               Href="https://github.com/Sammy-Lastre"
+                               Target="_blank"
+                               Color="Color.Default"
+                               Size="Size.Large" />
+            </MudStack>
+        </MudStack>
+    </MudPaper>
+
+    <MudGrid Class="mt-4">
+        <MudItem xs="12" md="4">
+            <MudPaper Outlined="true" Class="pa-6 text-center h-100">
+                <MudText Typo="Typo.h4" Color="Color.Primary"><b>5+</b></MudText>
+                <MudText Typo="Typo.subtitle1">Years building scalable Microsoft stack solutions</MudText>
+            </MudPaper>
+        </MudItem>
+        <MudItem xs="12" md="4">
+            <MudPaper Outlined="true" Class="pa-6 text-center h-100">
+                <MudText Typo="Typo.h4" Color="Color.Secondary"><b>Azure</b></MudText>
+                <MudText Typo="Typo.subtitle1">Hands-on delivery across cloud-native systems and observability</MudText>
+            </MudPaper>
+        </MudItem>
+        <MudItem xs="12" md="4">
+            <MudPaper Outlined="true" Class="pa-6 text-center h-100">
+                <MudText Typo="Typo.h4" Color="Color.Info"><b>End-to-end</b></MudText>
+                <MudText Typo="Typo.subtitle1">From architecture decisions to dependable production releases</MudText>
+            </MudPaper>
+        </MudItem>
+    </MudGrid>
 </MudContainer>
 
 @code {

@@ -1,5 +1,8 @@
 <MudContainer id="@Id" Class="@Class">
     <MudText Typo="Typo.h4" Color="Color.Primary" Class="mb-8"><b>Experience</b></MudText>
+    <MudText Typo="Typo.subtitle1" Color="Color.Secondary" Class="mb-8">
+        Delivery focused on scalable backend platforms, pragmatic architecture, and dependable collaboration.
+    </MudText>
 
     <MudBreakpointProvider OnBreakpointChanged="OnBreakpointChanged" />
 
@@ -9,14 +12,17 @@
                 <MudText Color="Color.Primary" Typo="Typo.h6"><b>Nov 2023 - Present</b></MudText>
             </ItemOpposite>
             <ItemContent>
-                <MudCard Elevation="3" Class="mb-6">
+                <MudCard Elevation="0" Outlined="true" Class="mb-6">
                     <MudCardHeader>
                         <CardHeaderContent>
                             <MudText Typo="Typo.h5"><b>Senior Backend Developer</b></MudText>
-                            <MudText Typo="Typo.subtitle1" Color="Color.Secondary">Tarlogic</MudText>
+                            <MudText Typo="Typo.subtitle1" Color="Color.Primary">Tarlogic</MudText>
                         </CardHeaderContent>
                     </MudCardHeader>
                     <MudCardContent>
+                        <MudChip T="string" Color="Color.Primary" Variant="Variant.Outlined" Size="Size.Small" Class="mb-4">
+                            Microservices | Azure | Observability
+                        </MudChip>
                         <ul class="mx-3">
                             <li><MudText Typo="Typo.body2">Architect and lead development of new functionalities in microservices and modular monolith applications using C# and ASP.NET Core for high transactional workloads.</MudText></li>
                             <li><MudText Typo="Typo.body2">Apply Clean Architecture, CQRS, and Vertical Slice patterns for modularity and scalability.</MudText></li>
@@ -34,7 +40,7 @@
                 <MudText Color="Color.Secondary" Typo="Typo.h6"><b>Aug 2022 - Nov 2023</b></MudText>
             </ItemOpposite>
             <ItemContent>
-                <MudCard Elevation="3" Class="mb-6">
+                <MudCard Elevation="0" Outlined="true" Class="mb-6">
                     <MudCardHeader>
                         <CardHeaderContent>
                             <MudText Typo="Typo.h5"><b>Software Engineer</b></MudText>
@@ -42,6 +48,9 @@
                         </CardHeaderContent>
                     </MudCardHeader>
                     <MudCardContent>
+                        <MudChip T="string" Color="Color.Secondary" Variant="Variant.Outlined" Size="Size.Small" Class="mb-4">
+                            Modernization | Full-stack delivery
+                        </MudChip>
                         <ul class="mx-3">
                             <li><MudText Typo="Typo.body2">Led modernization of legacy debt management tools to ASP.NET Core.</MudText></li>
                             <li><MudText Typo="Typo.body2">Developed full-stack features using Vue.js and JavaScript.</MudText></li>
@@ -53,19 +62,22 @@
             </ItemContent>
         </MudTimelineItem>
 
-        <MudTimelineItem Color="Color.Default" Variant="Variant.Filled" Size="@TimelineItemSize" Elevation="2">
+        <MudTimelineItem Color="Color.Info" Variant="Variant.Filled" Size="@TimelineItemSize" Elevation="2">
             <ItemOpposite>
-                <MudText Color="Color.Default" Typo="Typo.h6"><b>Feb 2021 - Aug 2022</b></MudText>
+                <MudText Color="Color.Info" Typo="Typo.h6"><b>Feb 2021 - Aug 2022</b></MudText>
             </ItemOpposite>
             <ItemContent>
-                <MudCard Elevation="3">
+                <MudCard Elevation="0" Outlined="true">
                     <MudCardHeader>
                         <CardHeaderContent>
                             <MudText Typo="Typo.h5"><b>Application Development Associate</b></MudText>
-                            <MudText Typo="Typo.subtitle1" Color="Color.Secondary">Accenture</MudText>
+                            <MudText Typo="Typo.subtitle1" Color="Color.Info">Accenture</MudText>
                         </CardHeaderContent>
                     </MudCardHeader>
                     <MudCardContent>
+                        <MudChip T="string" Color="Color.Info" Variant="Variant.Outlined" Size="Size.Small" Class="mb-4">
+                            Data pipelines | Enterprise delivery
+                        </MudChip>
                         <ul class="mx-3">
                             <li><MudText Typo="Typo.body2">Built backend automation and data transformation pipelines using C#, SSIS, and SQL Server.</MudText></li>
                             <li><MudText Typo="Typo.body2">Designed and optimized complex T-SQL queries for mass data validation and reporting.</MudText></li>

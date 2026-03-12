@@ -1,7 +1,13 @@
 <MudContainer id="@Id" Class="@Class">
     <MudText Typo="Typo.h4" Color="Color.Primary" Class="mb-6"><b>About Me</b></MudText>
-    
-    <MudPaper Class="pa-8" Elevation="3">
+
+    <MudPaper Class="pa-8" Elevation="0" Outlined="true">
+        <MudStack Row="true" Spacing="2" Class="mb-6 flex-wrap">
+            <MudChip T="string" Color="Color.Primary" Variant="Variant.Outlined">Reliable systems</MudChip>
+            <MudChip T="string" Color="Color.Secondary" Variant="Variant.Outlined">Clean architecture</MudChip>
+            <MudChip T="string" Color="Color.Info" Variant="Variant.Outlined">Forward-thinking delivery</MudChip>
+        </MudStack>
+
         <MudText Typo="Typo.body1" Class="mb-4">
             Senior Backend Developer with 5+ years of experience designing and building high-performance, scalable systems on the Microsoft stack. Specialized in cloud-native applications on Azure, working with C# and ASP.NET Core across microservices and modular monolith architectures.
         </MudText>
